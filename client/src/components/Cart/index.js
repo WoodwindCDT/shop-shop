@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import { useStoreContext } from '../../utils/GlobalState';
-import { TOGGLE_CART } from '../../utils/actions';
+import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 import './style.css';
-import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 
 const Cart = () => {
